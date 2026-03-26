@@ -55,11 +55,11 @@ node {
 
   stage('Mainframe Build')
   {
-    ispwOperation connectionId: "${Host_Connection}", // CWCC
-    //ispwOperation connectionId: 'de2ad7c3-e924-4dc2-84d5-d0c3afd3e756', // CWCC
+    //ispwOperation connectionId: "${Host_Connection}", // CWCC
+    ispwOperation connectionId: 'de2ad7c3-e924-4dc2-84d5-d0c3afd3e756', // CWCC
     consoleLogResponseBody: false,
-    //credentialsId: 'PFHMKS0-CES', // CWCC
-    credentialsId: "${Jenkins_CES_Credentials}", // CWCC
+    credentialsId: 'PFHMKS0-CES', // CWCC
+    //credentialsId: "${Jenkins_CES_Credentials}", // CWCC
     ispwAction: 'BuildTask',
     ispwRequestBody: '''buildautomatically = true'''
   }
