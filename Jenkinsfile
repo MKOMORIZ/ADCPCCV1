@@ -6,15 +6,15 @@ import groovy.json.JsonBuilder
 import groovy.json.JsonOutput
 import java.net.URL
 
-String ISPW_Application     = "MKS2"        // Change to your assigned application
-String HCI_Token            = "PFHMKS0"     // Change to your assigned ID
+String ISPW_Application     = "CCV1"             // Change to your assigned application
+String HCI_Token            = "FBRCCV0_CWCC"     // Change to your assigned ID
 String Host_Connection      = "de2ad7c3-e924-4dc2-84d5-d0c3afd3e756"
-String Jenkins_CES_Credentials = "PFHMKS0-CES"
+String Jenkins_CES_Credentials = "FBRCCV0_CES"
 String ISPW_Runtime_Config  = "ICCGA"
 String ISPW_Assignment = ""
 String ISPW_Level= "STG"    // Pre prod level
-String Git_Credential_Id = "a7500faf-0dd3-42b5-8b00-0553524a79d2"
-String Git_Repo_Url = "https://github.com/msingh9999/GitADCPMKS2.git"
+String Git_Credential_Id = "MKOMORIZ_Github"
+String Git_Repo_Url = "https://github.com/MKOMORIZ/ADCPCCV1.git"
 
 println "branch: " + env.BRANCH_NAME
     
