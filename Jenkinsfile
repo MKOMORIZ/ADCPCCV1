@@ -7,7 +7,7 @@ import groovy.json.JsonOutput
 import java.net.URL
 
 String ISPW_Application     = "CCV1"             // Change to your assigned application
-String HCI_Token            = "IBZKXM_CWCC"     // Change to your assigned ID
+String HCI_Token            = "IBZKXM_CWC"     // Change to your assigned ID
 String Host_Connection      = "de2ad7c3-e924-4dc2-84d5-d0c3afd3e756"
 String Jenkins_CES_Credentials = "IBZKXM_CES"
 String ISPW_Runtime_Config  = "ICCGA"
