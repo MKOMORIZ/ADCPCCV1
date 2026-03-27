@@ -51,7 +51,6 @@ node {
     gitRepoUrl: "${Git_Repo_Url}",
     //runtimeConfig: 'ICCGA', // CWCC
     runtimeConfig: "${ISPW_Runtime_Config}", // CWCC
-    gitCommit: "${Git_Commit_Id}",
     stream: 'FTSDEMO'
   }
 
