@@ -6,7 +6,7 @@
       *                                                                *
       *  THIS CALLED PROGRAM IS PART OF THE COBOL DEMO PROGRAM USED    *
 MAURO *  FOR XPEDITER/TSO TRAINING SESSIONS                             
-MAURO *  GITV6                                                          
+MAURO *  GITV7                                                          
       ******************************************************************
        ENVIRONMENT DIVISION.                                            
        DATA DIVISION.                                                   
