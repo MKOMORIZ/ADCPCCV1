@@ -13,7 +13,7 @@
       *              - REGIONAL SALES REPORT                           *
       *                                                                *
       *  RUN JCL     - STORED IN XPEDITER/TSO SAMPLIB (CWXTJCLC)       *
-MAURO *  DL 02/20/26  MAURO KOMORI                                      *
+MAURO *  DL 02/20/26  MAURO KOMORI  GITV8                               *
       ******************************************************************
        ENVIRONMENT DIVISION.                                            
        INPUT-OUTPUT SECTION.                                            
