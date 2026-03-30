@@ -9,12 +9,13 @@ import java.net.URL
 String ISPW_Application     = "CCV1"             // Change to your assigned application
 String HCI_Token            = "IBZKXM_CWCC"     // Change to your assigned ID
 String Host_Connection      = "de2ad7c3-e924-4dc2-84d5-d0c3afd3e756"
-String Jenkins_CES_Credentials = "IBZKXM_CES"
+String Jenkins_CES_Credentials = "MKOMORI_CES"
 String ISPW_Runtime_Config  = "ICCGA"
 String ISPW_Assignment = ""
 String ISPW_Level= "STG"    // Pre prod level
 String Git_Credential_Id = "MKOMORIZ_Github"
 String Git_Repo_Url = "https://github.com/MKOMORIZ/ADCPCCV1.git"
+String Git_Commit_Id = "8bf278cbc1ee29f5c1d7a2a1e4470f7c5efbba0f"
 
 println "branch: " + env.BRANCH_NAME
     
