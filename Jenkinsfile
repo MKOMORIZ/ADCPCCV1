@@ -58,9 +58,10 @@ node {
   { 
     bat "C:/WB_CLI_250101/IspwCLI.bat" +
     "-operation syncGitToIspw" +
-    "-host "cwcc.bmc.com"
+    "-host "cwcc.bmc.com" " +
     "-port "16196"" +
-    "-id "IBZKXM" -pass ********" +
+    "-id "IBZKXM"" +
+    "-pass ********" +
     "-protocol None" +
     "-code 1148 -timeout "0"" +
     "-targetFolder C:\Users\pfhsxk0\.jenkins\workspace\MKOMORIZ-GITDEMO_feature1" + 
