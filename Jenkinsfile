@@ -52,7 +52,7 @@ node {
     " -ispwConfigPath ./ispwconfig-nosb.yml" +
     " -ispwContainerCreation per-branch" +
     " -ispwContainerDescription "PUSH TO DEMO_FT"" +
-    " -gitUsername "MKOMORIZ" +
+    " -gitUsername "MKOMORIZ""+
     " -gitPassword ********" +
     " -gitRepoUrl 'https://github.com/MKOMORIZ/ADCPCCV1.git'" +
     " -gitBranch feature1" +
