@@ -31,29 +31,6 @@ node {
     // Get the code from the Git repository
     checkout scm 
   }
-
-  stage('Mainframe Load')
-  {
-    gitToIspwIntegration app: "${ISPW_Application}",
-    subAppl: "${ISPW_Application}",
-    ispwConfigPath: './ispwconfig-nosb.yml',
-    branchMapping: '''*release* => STG, per-branch'
-    bug* => EMR, per-branch
-    *feature1* => QA1, per-branch
-    *feature2* => QA2, per-branch
-    *feature3* => QA3, per-branch''',
-    //connectionId: 'de2ad7c3-e924-4dc2-84d5-d0c3afd3e756', // CWCC
-    connectionId: "${Host_Connection}", // CWCC
-    credentialsId: "${HCI_Token}",
-    //gitCredentialsId: 'a7500faf-0dd3-42b5-8b00-0553524a79d2', // GHE testdrive
-    gitCredentialsId: "${Git_Credential_Id}", // GHE testdrive
-    //gitRepoUrl: 'https://github.com/msingh9999/GitADCPMKS2.git',
-    gitRepoUrl: "${Git_Repo_Url}",
-    //runtimeConfig: 'ICCGA', // CWCC
-    runtimeConfig: "${ISPW_Runtime_Config}", // CWCC
-    stream: 'FTSDEMO'
-  }
-
   stage('GIT COMMIT')
   { 
     
@@ -75,12 +52,35 @@ node {
     " -ispwConfigPath ./ispwconfig-nosb.yml" +
     " -ispwContainerCreation per-branch" +
     " -ispwContainerDescription "PUSH TO DEMO_FT"" +
-    " -gitUsername "MKOMORIZ" -gitPassword ********" +
+    " -gitUsername "MKOMORIZ" +
+    " -gitPassword ********" +
     " -gitRepoUrl 'https://github.com/MKOMORIZ/ADCPCCV1.git'" +
     " -gitBranch feature1" +
     " -gitFromHash -1" +
     " -gitLocalPath C:/Users/pfhsxk0/.jenkins/workspace/MKOMORIZ-GITDEMO_feature1" +
     " -gitCommit "719880db2ee97c16c10303ce3c416e23d5868d6c""
+  }    
+
+  stage('Mainframe Load')
+  {
+    gitToIspwIntegration app: "${ISPW_Application}",
+    subAppl: "${ISPW_Application}",
+    ispwConfigPath: './ispwconfig-nosb.yml',
+    branchMapping: '''*release* => STG, per-branch'
+    bug* => EMR, per-branch
+    *feature1* => QA1, per-branch
+    *feature2* => QA2, per-branch
+    *feature3* => QA3, per-branch''',
+    //connectionId: 'de2ad7c3-e924-4dc2-84d5-d0c3afd3e756', // CWCC
+    connectionId: "${Host_Connection}", // CWCC
+    credentialsId: "${HCI_Token}",
+    //gitCredentialsId: 'a7500faf-0dd3-42b5-8b00-0553524a79d2', // GHE testdrive
+    gitCredentialsId: "${Git_Credential_Id}", // GHE testdrive
+    //gitRepoUrl: 'https://github.com/msingh9999/GitADCPMKS2.git',
+    gitRepoUrl: "${Git_Repo_Url}",
+    //runtimeConfig: 'ICCGA', // CWCC
+    runtimeConfig: "${ISPW_Runtime_Config}", // CWCC
+    stream: 'FTSDEMO'
   }
 
   stage('Mainframe Build')
