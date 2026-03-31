@@ -56,28 +56,28 @@ node {
 
   stage('GIT COMMIT')
   {
-    C:\WB_CLI_250101\IspwCLI.bat 
-    -operation syncGitToIspw 
-    -host "cwcc.bmc.com" 
-    -port "16196" 
-    -id "IBZKXM" -pass ******** 
-    -protocol None 
-    -code 1148 -timeout "0" 
-    -targetFolder C:\Users\pfhsxk0\.jenkins\workspace\MKOMORIZ-GITDEMO_feature1
-    -data C:\Users\pfhsxk0\.jenkins\workspace\MKOMORIZ-GITDEMO_feature1\TopazCliWkspc
-    -ispwServerConfig ICCGA 
-    -ispwServerStream FTSDEMO 
-    -ispwServerApp CCV1 
-    -ispwServerSubAppl CCV1
-    -ispwCheckoutLevel QA1 
-    -ispwConfigPath ./ispwconfig-nosb.yml
-    -ispwContainerCreation per-branch
-    -ispwContainerDescription "PUSH TO DEMO_FT" 
-    -gitUsername "MKOMORIZ" -gitPassword ******** 
-    -gitRepoUrl "https://github.com/MKOMORIZ/ADCPCCV1.git" 
-    -gitBranch feature1 
-    -gitFromHash -1 
-    -gitLocalPath C:\Users\pfhsxk0\.jenkins\workspace\MKOMORIZ-GITDEMO_feature1
+    C:\WB_CLI_250101\IspwCLI.bat \
+    -operation syncGitToIspw \
+    -host "cwcc.bmc.com" \
+    -port "16196" \
+    -id "IBZKXM" -pass ******** \
+    -protocol None \
+    -code 1148 -timeout "0" \
+    -targetFolder C:\Users\pfhsxk0\.jenkins\workspace\MKOMORIZ-GITDEMO_feature1 \ 
+    -data C:\Users\pfhsxk0\.jenkins\workspace\MKOMORIZ-GITDEMO_feature1\TopazCliWkspc \
+    -ispwServerConfig ICCGA \
+    -ispwServerStream FTSDEMO \ 
+    -ispwServerApp CCV1 \
+    -ispwServerSubAppl CCV1 \
+    -ispwCheckoutLevel QA1 \
+    -ispwConfigPath ./ispwconfig-nosb.yml \
+    -ispwContainerCreation per-branch \
+    -ispwContainerDescription "PUSH TO DEMO_FT" \
+    -gitUsername "MKOMORIZ" -gitPassword ******** \
+    -gitRepoUrl "https://github.com/MKOMORIZ/ADCPCCV1.git" \
+    -gitBranch feature1 \
+    -gitFromHash -1 \
+    -gitLocalPath C:\Users\pfhsxk0\.jenkins\workspace\MKOMORIZ-GITDEMO_feature1 \
     -gitCommit "719880db2ee97c16c10303ce3c416e23d5868d6c"
   }
 
