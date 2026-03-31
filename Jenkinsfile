@@ -64,8 +64,8 @@ node {
     "-pass ********" +
     "-protocol None" +
     "-code 1148 -timeout "0"" +
-    "-targetFolder C:\Users\pfhsxk0\.jenkins\workspace\MKOMORIZ-GITDEMO_feature1" + 
-    "-data C:\Users\pfhsxk0\.jenkins\workspace\MKOMORIZ-GITDEMO_feature1\TopazCliWkspc" +
+    "-targetFolder C:/Users/pfhsxk0/.jenkins/workspace/MKOMORIZ-GITDEMO_feature1" + 
+    "-data C:/Users/pfhsxk0/.jenkins/workspace/MKOMORIZ-GITDEMO_feature1/TopazCliWkspc" +
     "-ispwServerConfig ICCGA" +
     "-ispwServerStream FTSDEMO" + 
     "-ispwServerApp CCV1" +
@@ -78,7 +78,7 @@ node {
     "-gitRepoUrl 'https://github.com/MKOMORIZ/ADCPCCV1.git'" +
     "-gitBranch feature1" +
     "-gitFromHash -1" +
-    "-gitLocalPath C:\Users\pfhsxk0\.jenkins\workspace\MKOMORIZ-GITDEMO_feature1" +
+    "-gitLocalPath C:/Users/pfhsxk0/.jenkins/workspace/MKOMORIZ-GITDEMO_feature1" +
     "-gitCommit "719880db2ee97c16c10303ce3c416e23d5868d6c"
   }
 
