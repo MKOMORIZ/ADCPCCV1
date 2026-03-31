@@ -15,7 +15,7 @@ String ISPW_Assignment = ""
 String ISPW_Level= "STG"    // Pre prod level
 String Git_Credential_Id = "MKOMORIZ_Github"
 String Git_Repo_Url = "https://github.com/MKOMORIZ/ADCPCCV1.git"
-String Git_Commit_Id = "8bf278cbc1ee29f5c1d7a2a1e4470f7c5efbba0f"
+String Git_Commit_Id = "719880db2ee97c16c10303ce3c416e23d5868d6c"
 
 println "branch: " + env.BRANCH_NAME
     
