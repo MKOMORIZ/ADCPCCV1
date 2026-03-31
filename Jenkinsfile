@@ -79,7 +79,7 @@ node {
     "-gitBranch feature1" +
     "-gitFromHash -1" +
     "-gitLocalPath C:/Users/pfhsxk0/.jenkins/workspace/MKOMORIZ-GITDEMO_feature1" +
-    "-gitCommit "719880db2ee97c16c10303ce3c416e23d5868d6c"
+    "-gitCommit "719880db2ee97c16c10303ce3c416e23d5868d6c""
   }
 
   stage('Mainframe Build')
