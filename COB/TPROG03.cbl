@@ -21,7 +21,7 @@ MAURO *  TESTE FT1
 002100*                                                                 
 002200*  DD/MM/YY  PROGRAMMER  CHANGES                                  
 002300*  ********  **********  *******                                  
-002400*  96/01/24  ISPW        NEW PROGRAM                              
+MAURO *  96/01/24  ISPW        NEW PROGRAM V1                           
 002500* ======================================================          
 002600 ENVIRONMENT DIVISION.                                            
 002700 CONFIGURATION SECTION.                                           
