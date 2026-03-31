@@ -13,7 +13,8 @@
       *              - REGIONAL SALES REPORT                           *
       *                                                                *
       *  RUN JCL     - STORED IN XPEDITER/TSO SAMPLIB (CWXTJCLC)       *
-MAURO *  DL 02/20/26  MAURO KOMORI  FT1 V4                              *
+MAURO *  DL 02/20/26  MAURO KOMORI  FT2 V2                              *
+MAURO                                                                   
       ******************************************************************
        ENVIRONMENT DIVISION.                                            
        INPUT-OUTPUT SECTION.                                            
@@ -397,7 +398,7 @@ MAURO *  DL 02/20/26  MAURO KOMORI  FT1 V4                              *
            IF WA-EMP-HOURS GREATER THAN 40                              
                COMPUTE EMP-WAGES = WA-EMP-RATE * 40                     
                COMPUTE OT-HOURS  = WA-EMP-HOURS - 40                    
-               COMPUTE OT-AMOUNT = OT-HOURS * (WA-EMP-RATE * 1.5)       
+MAURO          COMPUTE OT-AMOUNT = OT-HOURS * (WA-EMP-RATE * 2.5)       
            ELSE                                                         
                COMPUTE EMP-WAGES = WA-EMP-HOURS * WA-EMP-RATE.          
            COMPUTE EMP-COMPENSATION = EMP-WAGES + OT-AMOUNT.            
