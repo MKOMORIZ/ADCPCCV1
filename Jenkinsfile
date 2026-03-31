@@ -56,7 +56,7 @@ node {
 
   stage('GIT COMMIT')
   { 
-    bat "C:/WB_CLI_250101/IspwCLI.bat" +
+    IspwCLI.bat +
     "-operation syncGitToIspw" +
     "-host "cwcc.bmc.com" " +
     "-port "16196"" +
