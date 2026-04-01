@@ -73,7 +73,7 @@ node {
         println "TTT Tests successfull!"
       }
       
-      stage('Obtem Cobertura de Código')
+      stage('Obtem Cobertura de Codigo')
       {
         sleep(5)
         println "Retrieve code successfull!"
