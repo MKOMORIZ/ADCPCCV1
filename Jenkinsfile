@@ -67,24 +67,29 @@ node {
 
  if (env.BRANCH_NAME.startsWith("feature"))
  {
-     stage('Run Tests')
+     stage('Executa Cenarios de Testes')
       {
-        sleep(10)
+        sleep(6)
         println "TTT Tests successfull!"
       }
       
-      stage('Retrieve Code Coverage')
+      stage('Obtem Cobertura de Código')
       {
         sleep(5)
         println "Retrieve code successfull!"
       }
     
-      stage('Run Sonar Analysis')
+      stage('Executa Analise SonarQube')
       {
-        sleep(12)
+        sleep(5)
         println "Sonar analysis successfull!"
       }
       
+      stage('Verifica Quality Gate')
+      {
+        sleep(2)
+        println "Sonar analysis successfull!"
+      }      
       //stage('Deploy to Runtime')
       //{
       //  sleep(7)
