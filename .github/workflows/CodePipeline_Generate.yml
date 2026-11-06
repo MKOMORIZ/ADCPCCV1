@@ -32,12 +32,11 @@ jobs:
       - name: Code Pipeline Generate
         # You may pin to the exact commit or the version.
         # uses: bmc-compuware/ispw-generate@9356ed36a2ee88f735203403ad86afe859b42790
-
         uses: bmc-compuware/ispw-generate@v1.5
         id: generate
         with:
         # The URL to send requests to.
-          ces_url:"http://cwcc.bmc.com:2020"
+          ces_url: "http://cwcc.bmc.com:2020"
         # The token to use when connecting to Code Pipeline through CES.
           ces_token: 708c4193-b59a-4265-97a2-7b99fff15dc8
         # The ID for the instance of Code Pipeline to connect to
